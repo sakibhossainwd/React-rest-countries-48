@@ -13,8 +13,10 @@ const Countries = () => {
         .then(data => setCountries(data))
     }, [])
     return (
-        <div>
-            <h2 className='heading'>This is another folder component: {countries.length}</h2>
+       <div >
+         <h2 className='heading'>Let's Explore the all Country in the world {countries.length}</h2>
+         <div className="countries-container">
+           
         {
             countries.map(country =>
                 <Country 
@@ -24,6 +26,7 @@ const Countries = () => {
                 ></Country>)
         }
         </div>
+       </div>
     );
 };
 

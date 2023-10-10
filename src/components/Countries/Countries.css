@@ -1,3 +1,10 @@
 h2{
-    color: rgba(90, 227, 21, 0.681);
+    color: rgba(13, 51, 186, 0.681);
+}
+
+
+.countries-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
