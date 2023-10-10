@@ -18,8 +18,9 @@ const Countries = () => {
         {
             countries.map(country =>
                 <Country 
-                name={country.name.common}
-                capital={country.capital}
+                country={country}
+                // name={country.name.common}
+                // capital={country.capital}
                 ></Country>)
         }
         </div>
