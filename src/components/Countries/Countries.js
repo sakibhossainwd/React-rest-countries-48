@@ -16,7 +16,11 @@ const Countries = () => {
         <div>
             <h2 className='heading'>This is another folder component: {countries.length}</h2>
         {
-            countries.map(country => <Country name={country.name.common}></Country>)
+            countries.map(country =>
+                <Country 
+                name={country.name.common}
+                capital={country.capital}
+                ></Country>)
         }
         </div>
     );
