@@ -14,12 +14,11 @@ const Countries = () => {
     }, [])
     return (
        <div >
-         <h2 className='heading'>Let's Explore the all Country in the world {countries.length}</h2>
+         <h2 className='heading'>Let's Explore the all Country in the world: {countries.length}</h2>
          <div className="countries-container">
            
         {
-            countries.map(country =>
-                <Country 
+            countries.map(country => <Country 
                 country={country}
                 key={country.cca3}
                 // name={country.name.common}
